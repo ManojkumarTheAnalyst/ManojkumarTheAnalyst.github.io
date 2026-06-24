@@ -1,35 +1,23 @@
-# Base image: Ruby with necessary dependencies for Jekyll
-FROM ruby:3.2
+---
+permalink: /
+title: "About Me"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    nodejs \
-    && rm -rf /var/lib/apt/lists/*
+I am an Assistant Professor in the Department of Computer Science at **Scope Global Skills University (SGSU), Bhopal**. I completed my M.Tech under Prof. Somesh Kumar at **IIT Kharagpur**, where I also served as a Teaching Assistant mentoring 80+ students.
 
+## Research Interests
+- Machine Learning & Deep Learning
+- Natural Language Processing
+- Retrieval-Augmented Generation (RAG)
+- Time Series Forecasting
 
-# Create a non-root user with UID 1000
-RUN groupadd -g 1000 vscode && \
-    useradd -m -u 1000 -g vscode vscode
-
-# Set the working directory
-WORKDIR /usr/src/app
-
-# Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
-
-# Switch to the non-root user
-USER vscode
-
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
-
-
-
-# Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
-RUN bundle install
-
-# Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
+## Highlights
+- 🏆 GATE rank in top **2.18%**
+- 🤖 RAG system with **99% retrieval recall**
+- 📈 Bitcoin price prediction at **97.87% accuracy**
+- 📝 Text summarization with **47.65 ROUGE-1 score**
+- 👨‍🏫 Mentored **80+ students** as TA at IIT Kharagpur

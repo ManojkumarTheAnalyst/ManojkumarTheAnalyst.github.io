@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an **Assistant Professor** in the Department of Computer Science at **Scope Global Skills University, Bhopal**. I completed my M.Tech (CGPA: 7.73) under Prof. Somesh Kumar at **IIT Kharagpur**, where I also served as Teaching Assistant mentoring 80+ students.
+I am an **Assistant Professor** in the Department of Computer Science at **Scope Global Skills University, Bhopal**. I completed my M.Tech  under Prof. Somesh Kumar at **IIT Kharagpur**, where I also served as Teaching Assistant mentoring 80+ students.
 
 ## Research Interests
 - Machine Learning & Deep Learning

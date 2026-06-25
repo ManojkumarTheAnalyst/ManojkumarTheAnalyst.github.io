@@ -19,4 +19,4 @@ author_profile: true
 
 ## Send a Message
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet2racPOG3GbphSIjUUZLh9dF38SKw0GXQHq66UnSQuq50vQ/viewform?embedded=true" width="100%" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet2racPOG3GbphSIjUUZLh9dF38SKw0GXQHq66UnSQuq50vQ/viewform?embedded=true" width="640" height="981" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

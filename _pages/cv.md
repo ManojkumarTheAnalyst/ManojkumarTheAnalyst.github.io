@@ -15,18 +15,18 @@ redirect_from:
 
 | Year | Degree | Institute | Score |
 |------|--------|-----------|-------|
-| 2024 | M.Tech (CS & Data Processing) | IIT Kharagpur | 7.73 CGPA |
-| 2022 | B.Ed (Mathematics) | WBUTTEPA | 92.15% |
-| 2020 | M.Sc (Applied Mathematics) | Visva Bharati | 66.9% |
-| 2017 | B.Sc (Mathematics) | University of Burdwan | 55% |
+| 2024 | M.Tech (CS & Data Processing) | IIT Kharagpur |
+| 2022 | B.Ed (Mathematics) | WBUTTEPA |
+| 2020 | M.Sc (Applied Mathematics) | Visva Bharati |
+| 2017 | B.Sc (Mathematics) | University of Burdwan |
 
 ---
 
 ## Experience
 
-**Assistant Professor** — SGSU, Bhopal *(2025 – Present)*
+**Assistant Professor** — SGSU, Bhopal *(2026 – Present)*
 
-**Teaching Assistant** — IIT Kharagpur *(2023 – 2024)*
+**Teaching Assistant** — IIT Kharagpur *(2024 – 2026)*
 - Optimization Techniques Lab (MA39207)
 - Model & Simulation Lab (MA39206)
 - Mentored 80+ students

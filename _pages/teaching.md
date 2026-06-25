@@ -7,7 +7,7 @@ author_profile: true
 
 ## Current Position
 **Assistant Professor** — Department of Computer Science
-Scope Global Skills University (SGSU), Bhopal *(2025 – Present)*
+Scope Global Skills University (SGSU), Bhopal *(2026 – Present)*
 
 ---
 
@@ -20,7 +20,7 @@ Scope Global Skills University (SGSU), Bhopal *(2025 – Present)*
 
 ---
 
-## Teaching Assistantship — IIT Kharagpur *(2023–2024)*
+## Teaching Assistantship — IIT Kharagpur *(2024–2026)*
 
 **Optimization Techniques Lab (MA39207)**
 Under Asst. Prof. Hari Shankar Mahato, Dept. of Mathematics

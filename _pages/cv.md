@@ -13,7 +13,7 @@ redirect_from:
 
 ## Education
 
-| Year | Degree | Institute | Score |
+| Year | Degree | Institute |
 |------|--------|-----------|-------|
 | 2024 | M.Tech (CS & Data Processing) | IIT Kharagpur |
 | 2022 | B.Ed (Mathematics) | WBUTTEPA |

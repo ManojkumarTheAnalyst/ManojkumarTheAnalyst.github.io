@@ -1,83 +1,37 @@
-/* ===== DARK NAVY THEME — FINAL FIX ===== */
+/* ===== DARK NAVY THEME — FINAL ===== */
 
-/* 1. Fix the root problem: override the CSS variables */
-html, html[data-theme="dark"] {
+/* Override CSS variables at root — these feed into navigation.scss automatically */
+html[data-theme="dark"] {
+  --global-bg-color: #0d1520;
   --global-masthead-link-color: #e0e0e0;
   --global-masthead-link-color-hover: #2ce8c8;
+  --global-text-color: #e2e8f0;
+  --global-text-color-light: #94a3b8;
+  --global-link-color: #2ce8c8;
+  --global-link-color-hover: #2ce8c8;
+  --global-border-color: #1e3a5f;
 }
 
-/* 2. Backgrounds */
-html,
-body,
-.page,
-#main,
-.initial-content,
-.layout--single,
-.page__inner-wrap,
-.page__content {
+/* Backgrounds */
+html, body, .page, #main, .initial-content,
+.layout--single, .page__inner-wrap, .page__content {
   background-color: #0d1520 !important;
 }
 
-/* 3. Masthead background — match the JS color so there's no flash */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav ul,
-.greedy-nav ul.visible-links {
-  background-color: #1a1a2e !important;
-  background: #1a1a2e !important;
-}
+/* Site title */
+.site-title, .site-title:visited { color: #2ce8c8 !important; font-weight: 700 !important; }
 
-.masthead { border-bottom: 2px solid #2ce8c8 !important; }
-
-/* 4. Site title */
-.site-title, .site-title:visited, a.site-title {
-  color: #2ce8c8 !important;
-  font-weight: 700 !important;
-}
-
-/* 5. NAV LINKS — highest possible specificity, overrides theme dark vars */
-html[data-theme="dark"] .greedy-nav .visible-links a,
-html[data-theme="dark"] .greedy-nav a,
-.masthead__inner-wrap .visible-links a,
-.masthead__inner-wrap nav a,
-.greedy-nav .visible-links li a,
-.greedy-nav .visible-links a,
-.greedy-nav a {
-  color: #e0e0e0 !important;
-  font-weight: 500 !important;
-  text-shadow: none !important;
-}
-
-html[data-theme="dark"] .greedy-nav .visible-links a:hover,
-html[data-theme="dark"] .greedy-nav a:hover,
-.greedy-nav .visible-links a:hover,
-.greedy-nav a:hover {
-  color: #2ce8c8 !important;
-}
-
-.greedy-nav .visible-links a::before {
-  background: #2ce8c8 !important;
-}
-
-/* 6. Sidebar */
+/* Sidebar */
 .sidebar { background: #111d2e !important; }
 .author__name { color: #2ce8c8 !important; }
-.author__bio { color: #94a3b8 !important; }
-.author__urls a { color: #94a3b8 !important; }
+.author__bio, .author__urls a { color: #94a3b8 !important; }
 
-/* 7. Content */
+/* Content */
 h1, h2, h3, h4 { color: #2ce8c8 !important; }
 p, li { color: #e2e8f0 !important; }
 strong { color: #ffffff !important; }
-a { color: #2ce8c8 !important; }
 
-/* 8. Tables */
-table { background: #111d2e !important; }
-td, th { color: #e2e8f0 !important; border-color: #1e3a5f !important; }
-tr:nth-child(even) { background: #0d1520 !important; }
-
-/* 9. Footer */
+/* Footer */
 .page__footer, footer {
   background: #0d1520 !important;
   border-top: 1px solid #1e3a5f !important;

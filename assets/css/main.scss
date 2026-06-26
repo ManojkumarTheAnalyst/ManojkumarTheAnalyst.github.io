@@ -77,3 +77,36 @@ tr:nth-child(even) { background: #0d1520 !important; }
 /* Footer */
 .page__footer, footer { background: #0d1520 !important; border-top: 1px solid #1e3a5f !important; }
 .page__footer-follow, .page__footer-copyright { color: #64748b !important; }
+
+
+
+/* ─── Fix: Masthead/Header Readability ─── */
+.masthead {
+  background-color: #1a1a2e !important;
+  border-bottom: 2px solid #00b4d8;
+
+  &__inner-wrap {
+    background-color: #1a1a2e !important;
+  }
+}
+
+.site-title {
+  color: #00b4d8 !important;
+  font-weight: 700 !important;
+}
+
+.greedy-nav {
+  background-color: #1a1a2e !important;
+
+  a {
+    color: #e0e0e0 !important;
+
+    &:hover {
+      color: #00b4d8 !important;
+    }
+  }
+
+  .visible-links a::before {
+    background: #00b4d8 !important;
+  }
+}

@@ -1,21 +1,30 @@
-<style>
-  .masthead,
-  .masthead__inner-wrap,
-  .greedy-nav {
-    background-color: #1a1f35 !important;
-  }
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var dark  = "#1a1a2e";
+    var teal  = "#4dccc0";
+    var light = "#cccccc";
 
-  .site-title {
-    color: #4dccc0 !important;
-    font-weight: 700 !important;
-  }
+    // Dark background on masthead
+    [".masthead", ".masthead__inner-wrap", ".greedy-nav"].forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (el) el.setAttribute("style",
+        "background:" + dark + "!important;" +
+        "background-color:" + dark + "!important;" +
+        "border-bottom:2px solid " + teal + "!important;"
+      );
+    });
 
-  .greedy-nav a,
-  .greedy-nav button {
-    color: #e0e0e0 !important;
-  }
+    // Teal site title
+    var title = document.querySelector(".site-title");
+    if (title) title.setAttribute("style", "color:" + teal + "!important; font-weight:700!important;");
 
-  .greedy-nav a:hover {
-    color: #4dccc0 !important;
-  }
-</style>
+    // Light nav links + hover
+    document.querySelectorAll(".greedy-nav a").forEach(function (a) {
+      if (!a.classList.contains("site-title")) {
+        a.setAttribute("style", "color:" + light + "!important;");
+        a.addEventListener("mouseenter", function () { this.style.color = teal; });
+        a.addEventListener("mouseleave", function () { this.style.color = light; });
+      }
+    });
+  });
+</script>

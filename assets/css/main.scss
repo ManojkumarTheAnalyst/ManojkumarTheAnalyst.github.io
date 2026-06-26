@@ -1,47 +1,12 @@
----
----
+/* ===== DARK NAVY THEME — FINAL FIX ===== */
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+/* 1. Fix the root problem: override the CSS variables */
+html, html[data-theme="dark"] {
+  --global-masthead-link-color: #e0e0e0;
+  --global-masthead-link-color-hover: #2ce8c8;
+}
 
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv"
-;
-
-
-/* ===== DARK NAVY THEME — CONSOLIDATED ===== */
-
-/* ─── Global Backgrounds ─── */
+/* 2. Backgrounds */
 html,
 body,
 .page,
@@ -50,92 +15,71 @@ body,
 .layout--single,
 .page__inner-wrap,
 .page__content {
-  background: #0d1520 !important;
+  background-color: #0d1520 !important;
 }
 
-/* ─── Masthead / Navbar ─── */
+/* 3. Masthead background — match the JS color so there's no flash */
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav,
 .greedy-nav ul,
 .greedy-nav ul.visible-links {
-  background: #0d1520 !important;
-  background-color: #0d1520 !important;
+  background-color: #1a1a2e !important;
+  background: #1a1a2e !important;
 }
 
-.masthead {
-  border-bottom: 2px solid #2ce8c8 !important;
-}
+.masthead { border-bottom: 2px solid #2ce8c8 !important; }
 
-/* Site title */
-.site-title,
-.site-title:visited,
-a.site-title {
+/* 4. Site title */
+.site-title, .site-title:visited, a.site-title {
   color: #2ce8c8 !important;
   font-weight: 700 !important;
 }
 
-/* ALL nav links — covers every state */
-.greedy-nav a,
-.greedy-nav .visible-links a,
+/* 5. NAV LINKS — highest possible specificity, overrides theme dark vars */
+html[data-theme="dark"] .greedy-nav .visible-links a,
+html[data-theme="dark"] .greedy-nav a,
+.masthead__inner-wrap .visible-links a,
+.masthead__inner-wrap nav a,
 .greedy-nav .visible-links li a,
-nav.greedy-nav li a {
+.greedy-nav .visible-links a,
+.greedy-nav a {
   color: #e0e0e0 !important;
   font-weight: 500 !important;
   text-shadow: none !important;
 }
 
-.greedy-nav a:hover,
+html[data-theme="dark"] .greedy-nav .visible-links a:hover,
+html[data-theme="dark"] .greedy-nav a:hover,
 .greedy-nav .visible-links a:hover,
-.greedy-nav .visible-links li a:hover {
+.greedy-nav a:hover {
   color: #2ce8c8 !important;
 }
 
-/* Underline hover effect */
 .greedy-nav .visible-links a::before {
   background: #2ce8c8 !important;
 }
 
-/* Overflow / hamburger menu */
-.greedy-nav__toggle {
-  color: #e0e0e0 !important;
-}
-
-.hidden-links {
-  background: #111d2e !important;
-  border: 1px solid #1e3a5f !important;
-}
-
-.hidden-links a {
-  color: #e0e0e0 !important;
-}
-
-.hidden-links a:hover {
-  color: #2ce8c8 !important;
-  background: #0d1520 !important;
-}
-
-/* ─── Sidebar ─── */
+/* 6. Sidebar */
 .sidebar { background: #111d2e !important; }
 .author__name { color: #2ce8c8 !important; }
 .author__bio { color: #94a3b8 !important; }
 .author__urls a { color: #94a3b8 !important; }
 
-/* ─── Content ─── */
+/* 7. Content */
 h1, h2, h3, h4 { color: #2ce8c8 !important; }
 p, li { color: #e2e8f0 !important; }
 strong { color: #ffffff !important; }
 a { color: #2ce8c8 !important; }
 
-/* ─── Tables ─── */
+/* 8. Tables */
 table { background: #111d2e !important; }
 td, th { color: #e2e8f0 !important; border-color: #1e3a5f !important; }
 tr:nth-child(even) { background: #0d1520 !important; }
 
-/* ─── Footer ─── */
+/* 9. Footer */
 .page__footer, footer {
   background: #0d1520 !important;
   border-top: 1px solid #1e3a5f !important;
 }
-.page__footer-follow,
-.page__footer-copyright { color: #64748b !important; }
+.page__footer-follow, .page__footer-copyright { color: #64748b !important; }

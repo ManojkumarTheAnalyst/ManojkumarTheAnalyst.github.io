@@ -1,22 +1,22 @@
-{% include base_path %}
-
-<!-- start custom head snippets -->
-
-<!-- Support for Academicons -->
-<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
-
-<!-- Support for Font Awesome -->
- <link rel="preload" href="{{ base_path }}/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/fontawesome.css"></noscript>
-
-<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="var(--global-bg-color)"/>
-
-<!-- end custom head snippets -->
+<style>
+html, body, .page, #main,
+.initial-content, .layout--single,
+.page__inner-wrap, .page__content {
+  background-color: #0d1520 !important;
+}
+.masthead, .masthead__inner-wrap, .greedy-nav {
+  background-color: #0d1520 !important;
+  border-bottom: 2px solid #2ce8c8 !important;
+}
+.greedy-nav a, .visible-links a { color: #ffffff !important; }
+.greedy-nav a:hover { color: #2ce8c8 !important; }
+.site-title { color: #2ce8c8 !important; }
+.sidebar { background-color: #111d2e !important; }
+.author__name { color: #2ce8c8 !important; }
+h1, h2, h3, h4 { color: #2ce8c8 !important; }
+p, li { color: #e2e8f0 !important; }
+a { color: #2ce8c8 !important; }
+table, thead { background-color: #111d2e !important; }
+td, th { color: #e2e8f0 !important; }
+.page__footer, footer { background-color: #0a1020 !important; }
+</style>

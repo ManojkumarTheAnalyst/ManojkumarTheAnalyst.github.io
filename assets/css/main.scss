@@ -39,29 +39,41 @@
 ;
 
 
-/* ===== NAVY DARK THEME ===== */
-html, body, .page, #main, .initial-content,
-.layout--single, .page__inner-wrap {
-  background-color: #0a1628 !important;
-  color: #e2e8f0 !important;
-}
-.masthead, .masthead__inner-wrap, .greedy-nav {
-  background-color: #0a1628 !important;
-  border-bottom: 1px solid #2ce8c8 !important;
-}
-.greedy-nav a, .visible-links a, .site-title {
-  color: #e2e8f0 !important;
-}
-.site-title { color: #2ce8c8 !important; }
-.sidebar, .author__urls-wrapper {
-  background-color: #0d1f35 !important;
-}
+/* ===== COMPLETE DARK NAVY THEME ===== */
+
+/* Background everywhere */
+html { background: #0d1520 !important; }
+body, .page, #main, .initial-content,
+.layout--single, .page__inner-wrap,
+.page__content { background: #0d1520 !important; }
+
+/* NAVBAR FIX - text visible */
+.masthead { background: #0d1520 !important; border-bottom: 1px solid #2ce8c8 !important; }
+.masthead__inner-wrap { background: #0d1520 !important; }
+.greedy-nav { background: #0d1520 !important; }
+.greedy-nav a { color: #ffffff !important; font-weight: 500 !important; }
+.greedy-nav a:hover { color: #2ce8c8 !important; }
+.visible-links a { color: #ffffff !important; }
+.visible-links a:hover { color: #2ce8c8 !important; }
+.site-title, .site-title:visited { color: #2ce8c8 !important; }
+
+/* Sidebar */
+.sidebar { background: #111d2e !important; }
 .author__name { color: #2ce8c8 !important; }
+.author__bio { color: #94a3b8 !important; }
+.author__urls a { color: #94a3b8 !important; }
+
+/* Content */
 h1, h2, h3, h4 { color: #2ce8c8 !important; }
+p, li { color: #e2e8f0 !important; }
+strong { color: #ffffff !important; }
 a { color: #2ce8c8 !important; }
-p, li, td, th { color: #e2e8f0 !important; }
-table { background-color: #0d1f35 !important; }
-.page__footer, footer {
-  background-color: #0a1628 !important;
-  color: #64748b !important;
-}
+
+/* Tables */
+table { background: #111d2e !important; }
+td, th { color: #e2e8f0 !important; border-color: #1e3a5f !important; }
+tr:nth-child(even) { background: #0d1520 !important; }
+
+/* Footer */
+.page__footer, footer { background: #0d1520 !important; border-top: 1px solid #1e3a5f !important; }
+.page__footer-follow, .page__footer-copyright { color: #64748b !important; }

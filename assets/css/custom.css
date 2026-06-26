@@ -1,4 +1,15 @@
+/* Dark theme */
+body { background-color: #0d1117 !important; color: #e6edf3 !important; }
+.masthead { background-color: #0d1f2d !important; border-bottom: 1px solid #2ce8c8 !important; }
+.masthead__inner-wrap { background-color: #0d1f2d !important; }
+.greedy-nav { background: #0d1f2d !important; }
+.greedy-nav a { color: #e6edf3 !important; }
+.sidebar { background-color: #161b22 !important; }
+.author__name { color: #2ce8c8 !important; }
 a { color: #2ce8c8 !important; }
-.masthead { background: #0d1f2d !important; }
-body { background: #0d1117 !important; color: #cdd6f4 !important; }
-h1, h2, h3 { color: #2ce8c8 !important; }
+h1, h2, h3, h4 { color: #2ce8c8 !important; }
+.page__content p { color: #e6edf3 !important; }
+.page__footer { background-color: #0d1f2d !important; color: #8b949e !important; }
+.nav__list .nav__items a { color: #e6edf3 !important; }
+.author__bio { color: #8b949e !important; }
+.archive__item-title a { color: #2ce8c8 !important; }

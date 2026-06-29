@@ -1,6 +1,11 @@
-/* ===== DARK NAVY THEME — FINAL ===== */
+---
+# front matter required
+---
 
-/* Override CSS variables at root — these feed into navigation.scss automatically */
+@charset "utf-8";
+@import "minimal-mistakes";
+
+/* ===== DARK NAVY THEME — FINAL ===== */
 html[data-theme="dark"] {
   --global-bg-color: #0d1520;
   --global-masthead-link-color: #e0e0e0;
@@ -11,27 +16,17 @@ html[data-theme="dark"] {
   --global-link-color-hover: #2ce8c8;
   --global-border-color: #1e3a5f;
 }
-
-/* Backgrounds */
 html, body, .page, #main, .initial-content,
 .layout--single, .page__inner-wrap, .page__content {
   background-color: #0d1520 !important;
 }
-
-/* Site title */
 .site-title, .site-title:visited { color: #2ce8c8 !important; font-weight: 700 !important; }
-
-/* Sidebar */
 .sidebar { background: #111d2e !important; }
 .author__name { color: #2ce8c8 !important; }
 .author__bio, .author__urls a { color: #94a3b8 !important; }
-
-/* Content */
 h1, h2, h3, h4 { color: #2ce8c8 !important; }
 p, li { color: #e2e8f0 !important; }
 strong { color: #ffffff !important; }
-
-/* Footer */
 .page__footer, footer {
   background: #0d1520 !important;
   border-top: 1px solid #1e3a5f !important;
